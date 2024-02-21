@@ -215,7 +215,7 @@ font-size: 20px;
   margin-top: 20px;
 }
 body{
-  font-family: Arial, Helvetica, sans-seri;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .heading{
@@ -231,15 +231,15 @@ body{
 }
 
 #LIFE {
-    font-family: cursive;
+   font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: rgb(15, 0, 0);
     font-weight: 500;
-    width: 100%; /* Occupy full width */
-    text-align: center; /* Center the text */
-    padding: 20px 0; /* Add padding */
-    position: fixed; /* Fixed position */
-    top: 0; /* Stick to the top */
+    width: 100%; 
+   
+    padding: 20px 0;
+    position: fixed;
+    top: 0; 
     z-index: 100;
     font-size: 23px;
     box-shadow: 10px 2px 10px rgba(128, 128, 128, 0.301);
