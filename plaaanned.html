@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planned payments</title>
+    
+    <script src="https://kit.fontawesome.com/30b88bc28e.js" crossorigin="anonymous"></script>
+    
+    
+    
+
+</head>
+<style>
+    body{
+         background: rgb(184,186,181);
+         background-size: cover;
+         background-repeat: no-repeat;
+         color: white;
+         padding-top: 140px;
+         
+    }
+    .table{
+        position: relative;
+        justify-content: center;
+        left: 870px;
+        text-shadow: 3px 3px 3px #ababab6b;
+        top: 90px;
+        padding-top: 5px;
+        height: 110px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        border:  1px solid white;
+        box-shadow: 2px 10px 72px 2px rgba(131, 14, 14, 0.662);
+        width: 275px;
+        padding-left: 40px;
+        border-radius: 7px;
+        background-color: black;
+        z-index: 1;
+        
+    }
+    #png{
+        position: relative;
+        bottom: 40px;
+    }
+    #immg{
+        width: 1500px;
+        height: 830px;
+        position: relative;
+        bottom: 380px;
+     
+    }
+</style>
+<body>
+    
+    
+     
+<div class="table">
+  <div class="cell">
+      <h1 id="clock" class="clock"></h1>
+      
+     
+  </div>
+
+</div>
+<img src="https://images.getimg.ai/resize?url=https%3A%2F%2Fimg.getimg.ai%2Fgenerated%2Fimg-ib1NEZqZ8ZpyYrBSkOhGh.jpeg&type=auto&width=1024" id="immg">
+<script>
+
+var time, alarm, currentH, currentM,
+    activeAlarm = false,
+    sound = new Audio("https://freesound.org/data/previews/316/316847_4939433-lq.mp3");
+
+
+
+// loop alarm
+sound.loop = true;
+
+// define a function to display the current time
+function displayTime() {
+    var now = new Date();
+    time = now.toLocaleTimeString();
+    clock.textContent = time;
+    // time = "1:00:00 AM";
+    // watch for alarm
+    if (time === alarm) {
+        sound.play();
+
+        // show snooze button
+        snooze.className = "";
+    }
+    setTimeout(displayTime, 1000);
+}
+displayTime();
+
+// add option values relative towards time
+function addMinSecVals(id) {
+    var select = id;
+    var min = 59;
+
+    for (i = 0; i <= min; i++) {
+        // defined as new Option(text, value)
+        select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i < 10 ? "0" + i : i);
+    }
+}
+
+function addHours(id) {
+    var select = id;
+    var hour = 12;
+
+    for (i = 1; i <= hour; i++) {
+        // defined as new Option(text, value)
+        select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+    }
+}
+addMinSecVals(minutes);
+addMinSecVals(seconds);
+addHours(hours);
+
+// set and clear alarm
+startstop.onclick = function() {
+    // set the alarm
+    if (activeAlarm === false) {
+        hours.disabled = true;
+        minutes.disabled = true;
+        seconds.disabled = true;
+        ampm.disabled = true;
+
+        alarm = hours.value + ":" + minutes.value + ":" + seconds.value + " " + ampm.value;
+        this.textContent = "Clear Alarm";
+        activeAlarm = true;
+    } else {
+        // clear the alarm
+        hours.disabled = false;
+        minutes.disabled = false;
+        seconds.disabled = false;
+        ampm.disabled = false;
+
+        sound.pause();
+        alarm = "00:00:00 AM";
+        this.textContent = "Set Alarm";
+
+        // hide snooze button
+        snooze.className = "hide";
+        activeAlarm = false;
+    }
+};
+
+// snooze for 5 minutes
+snooze.onclick = function() {
+    if (activeAlarm === true) {
+        // grab the current hour and minute
+        currentH = time.substr(0, time.length - 9);
+        currentM = time.substr(currentH.length + 1, time.length - 8);
+
+        if (currentM >= "55") {
+            minutes.value = "00";
+            hours.value = parseInt(currentH) + 1;
+        } else {
+            if (parseInt(currentM) + 5 <= 9) {
+                minutes.value = "0" + parseInt(currentM + 5);
+            } else {
+                minutes.value = parseInt(currentM) + 5;
+            }
+        }
+
+        // hide snooze button
+        snooze.className = "hide";
+
+        // now reset alarm
+        startstop.click();
+        startstop.click();
+    } else {
+        return true;
+    }
+};
+</script>
+</body>
+</html>

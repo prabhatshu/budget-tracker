@@ -1,0 +1,289 @@
+body {
+ background-image: url(tu.jpg);
+ color: black;
+  transition: background-color 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.black-bg {
+  background-color:papayawhip;
+}
+
+.hd{
+position: relative;
+bottom: 5px;
+
+}
+#h{
+  position: fixed;
+  color: aquamarine;
+  background-color: #010103;
+  height: 58px;
+  
+ margin-bottom: 610px;
+right: 1px;
+left: .1px;
+ z-index: 1;
+width: 1560px;
+  font-size: 26px;
+  padding-top: 34px;
+  padding-left: 35px;
+  bottom: 35px;
+ 
+}
+#h2{
+    border-bottom: 2px solid darkred;
+    
+    padding: 3px;
+    border-radius: 14px;
+    margin-left: 67px;
+    position: relative;
+    top: 100px;
+    
+}
+#p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+#t{
+    margin-left: 1000px;
+    position: relative;
+    bottom: 67px;
+    border: none;
+    font-size: 16px;
+    background-color:paleturquoise;
+    color: white;
+}
+#d{
+    position: relative;
+    right:200px;
+    bottom: 34px;
+}
+#P2{
+    position: relative;
+    left:990PX ;
+    BOTTOM: 22PX;
+    font-size: 18PX;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading{
+    text-align: center;
+    margin-top: 120px;
+}
+  
+  .dropbtn {
+    position: relative;
+    bottom: 3px;
+    background-color: black;
+    
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    font-size: 41px;
+    background-color:#202123;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, 1);
+    opacity: 100%;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    font-size: 14px;
+    color: white;
+    padding: 18px 87px;
+    
+    text-decoration: none;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+
+  }
+  
+  
+  .dropdown-content a:hover {background-color: black; color: aquamarine; font-size: 16px; transition: .01s;}
+  
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  
+  .dropdown:hover .dropbtn {background-color: black;
+    color: white; cursor: pointer;
+}
+
+
+#fa-solid {
+  position: relative;
+  bottom: 16px;
+  left: 70px;
+ 
+}
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 1;
+}
+
+.pie {
+  --p:20;
+  --b:22px;
+  --c:darkred;
+  --w:150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 20px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset: calc(50% - var(--b)/2);
+  background: var(--c);
+  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation: p 1s .5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p{
+  from{--p:0}
+}
+#bar{
+  position: relative;
+ right: 9px;
+}
+.{
+     margin-top: 56px;
+     margin-left: 770px;
+    font-size: 22px;
+    background-color: pink;
+    text-decoration: none;
+    border: none;
+}
+#arrow{
+  position: relative;
+  left:1470px ;
+  top: 120px;
+}
+button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: 0;
+  color: black;
+  transition: all ease 300ms;
+}
+button:hover {
+  color: #333;
+  background: #fff;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  cursor: default;
+}
+/* variable misc classes */
+.hide {
+  display: none;
+}
+/* buttons */
+
+button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: 0;
+  color: #fff;
+  transition: all ease 300ms;
+}
+
+button:hover {
+  color: #333;
+  background: #fff;
+}
+
+
+/* center content vertically and horizontally */
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  cursor: default;
+}
+
+
+/* variable misc classes */
+
+.hide {
+  display: none;
+}
+#dash{
+  height: 30px;
+  font-size: 25px;
+  
+  box-shadow: 3px 5px 5px  rgba(12, 12, 12, 0.479);
+}
+#log:hover{
+  color:red;
+ font-size: 16px;
+  
+}

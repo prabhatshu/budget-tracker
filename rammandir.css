@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://swarajya.gumlet.io/swarajya/2020-08/2d9090ae-79e3-46b7-a65a-e35f1a9fe691/WhatsApp_Image_2020_08_04_at_21_08_38.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+section .wave{
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    bottom: 0px;
+    left: 0;
+    background-image: url('rr.png');
+z-index: 1;
+    animation: animate 10s linear infinite;
+}
+section .wave :before
+{
+    content: '';
+    width: 100%;
+    height: 300px;
+    background: url('rr.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position: 0px;
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        background-position: 1360px;
+        transform: translateY(0%) rotate(0deg); /* Adjust the angle (45deg in this example) */
+    }
+}
+@keyframes animate-reverse{
+    0%
+    {
+        background-position: 1360px;
+    }
+    100%
+    {
+        background-position: 0px;
+    }
+}
+
+section .save{
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    bottom:200px;
+    left: 0;
+    background-image: url('hecto.png');
+    justify-content: space-between;
+
+    animation: sanimate 10s linear infinite;
+}
+section .save :before
+{
+    content: '';
+    width: 100%;
+    height: 300px;
+    background: url('hecto.png');
+    justify-content: space-between;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0.4;
+    animation: sanimate-reverse 10s linear infinite;
+}
+@keyframes sanimate{
+    0%
+    {
+        background-position: 4000px;
+        transform: translateY(0) rotate(0deg);
+    }
+    
+    100%
+    {
+        background-position: 0px;
+        transform: translateY(0%) rotate(-1deg);
+    }
+}
+@keyframes sanimate-reverse{
+    0%
+    {
+        background-position: 0px;
+    }
+    100%
+    {
+        background-position: 4000px;
+    }
+}
+#air{
+    width: 200px;
+
+}
+
+#bg2{
+    position: relative;
+    bottom: 70px;
+}

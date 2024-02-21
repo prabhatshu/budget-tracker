@@ -1,0 +1,312 @@
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    z-index: 100;
+}
+.navbar a {
+    left: 40px;
+    position: relative;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background:white;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.search-bar{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex ;
+    align-items: center;
+}
+.search-bar input{
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color: wheat;
+
+}
+.search-bar button{
+    width: 40px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 1px;
+
+}
+.search-bar button i{
+    font-size: 15px;
+color: white;
+}
+
+.background{
+    width:100%;
+    height: 100vh;
+ background: url(fi.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+}
+.container{
+     position:absolute;
+     top: 15%;
+     left: 12.5%;
+     width: 75%;
+     height: 550px;
+     background-color:black;
+     background-size: cover;
+     background-position: center;
+     opacity: .7;
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.content .logo{
+    font-size: 30px;
+}
+.content h2{
+    font-size:40px;
+}
+.text-sci h2 span{
+    font-size: 25px ;
+    line-height: 1;
+}
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+   
+    height: 100%;
+}
+  .social-icons a i {
+    font-size: 20px;
+    color:white;
+    margin-right: 10px;
+    transition: .5s ease;
+
+}
+.social-icons a:hover i{
+    transform: scale(1.2);
+  
+}
+.yu{
+    margin: 45px 0;
+} 
+
+ .container .logreg-box{  
+      position: absolute; 
+     top: 0; 
+     right: 0; 
+     width: calc(100% - 58%); 
+     height: 100%; 
+   
+}
+
+.logreg-box .form-box{
+    position: absolute;
+    display: flex;
+   box-shadow: 10px white;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   backdrop-filter: blur(12px);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   color: white;
+}
+.logreg-box .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+.logreg-box.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay:0s;
+} 
+
+.logreg-box .form-box.register{
+    transform: translateX(430px);
+}
+.logreg-box.active .form-box.register{
+    transform: translateX(0);
+    transition-delay: .7s;
+}
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box{
+    position: relative;
+     width: 340px;
+     height: 50px;
+     border-bottom: 2px solid white;
+     margin: 30px 0;
+}
+.input-box input{
+ width: 100%;
+ height: 100%;
+ background: transparent;
+ border: none;
+ outline: none;
+ font-size: 16px;
+ color: white;
+ font-weight: 500;
+ padding-right: 28px;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) ;
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+.input-box .icon{
+    position: absolute ;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
+
+}
+
+.form-box .remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between;
+}
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width:100% ;
+    height: 45px;
+    background: #c4103d;
+    border:none ;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px black;
+    opacity: 1;
+}
+.btn:hover{
+    background: transparent ;
+    color: white;
+    border: 2px solid crimson;
+    
+   
+}
+.form-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+.login-register p a{
+    color: white;
+    font-family: 600;
+    text-decoration: none;
+
+}
+.login-register p a:hover{
+     text-decoration: underline ;
+}
+.logo{
+     text-shadow: 2px 2px gray;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#hhi{
+    transition: .10s ease;
+}
+#cc{
+    text-decoration: none;
+    color: white;
+}

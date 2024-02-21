@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+  *{ padding: 0;
+    margin: 0;
+    
+}
+body{
+  background: fixed;
+  font-family: Arial, sans-serif;
+    width:100%;
+    height: 100vh;
+   
+   /*background-image: url('https://img.freepik.com/premium-photo/top-view-photo-piggybank-pink-calculator-clipboard-planner-pen-plant-isolated-pastel-pink-background-with-copyspace_352249-5395.jpg');
+   */
+   background-color: black;
+   transition: background-color 0.3s ease;
+    background-size: cover;
+    background-position: center;
+ 
+    color: white;
+    transition: transform .6s ease;
+ 
+}
+
+.header{
+   margin-top: 30px;
+   position: relative;
+ top: 50px;
+  right: 10px;
+    width: 100%;
+    padding: 10px 16%;
+    
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+.navbar a {
+    position: relative;
+    right: 10%;
+    font-size: 17px;
+    color:white ;
+    text-decoration: none;
+   
+    margin-right: 30px;
+
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background:white;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+   opacity: 3;
+}
+#MONTH{
+  
+ position: relative;
+ color: white;
+ top: 50px;
+   font-size: 30PX;
+    margin-left: 10%;
+}
+.divv{
+  position: relative;
+  top: 50px;
+  
+}
+.sum{
+  position: relative;
+  top: 40px;
+}
+.hhh{
+  position: relative;
+  left: 140px;
+}
+.divs{
+  border-radius: 30px;
+  border: 2px solid black;
+  box-shadow: 4px 2px 15px 5px #171717;
+  position: relative;
+  left: 140px;
+  padding-left: 40px;
+  width: 1280px;
+  padding-top: 20px;
+
+}
+#h1{
+  position: relative;
+  left: 56px;
+
+    margin-bottom: 3%;
+    font-size: 40PX;
+    color: black;
+ 
+ 
+}
+#pig{
+  position: relative;
+  right: 5px;
+}
+#H2{
+    
+   
+   
+    color: white;
+}
+#h1:a{
+    font-size: 90px;
+    
+}
+
+#table{
+ 
+  position: relative;
+  
+   font-size: 21px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  border: none;
+ 
+  
+ color: white;
+width: 1200px;
+ 
+}
+#ty{
+ height: 40px;
+
+}
+#RR{
+   left: 60%;
+   padding-left: 400PX;
+   
+ 
+}
+ #TEXT::placeholder,#GEXT::placeholder,#FEXT::placeholder{
+  color: rgba(0, 0, 0, 0.833);
+  font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+
+ }
+  #TEXT{
+    margin: 0 150PX;
+    font-size: 25PX;
+    color: white;
+    padding-left:100px ;
+    background-color:white;
+    background: transparent;
+    cursor: not-allowed;
+    width: 220px;
+   
+  }
+  #para{
+    position: relative;
+    left: 150px;
+    size: 20px;
+    color: white;
+    font-weight: 400;
+    bottom: 30px;
+   
+  }
+  #GEXT{
+    margin: 0 0PX;
+    font-size: 25PX;
+    color: white;
+    cursor: not-allowed;
+    padding-left:130px ;
+    background-color:white;
+    background: transparent;
+    width: 220px;
+  }
+  #FEXT{
+    margin: 0 1080PX;
+    position: relative;
+    cursor: not-allowed;
+    bottom: 34px;
+    color: white;
+    font-size: 25PX;
+    padding-left:100px ;
+    background-color:white;
+    background: transparent;
+    width: 220px;
+  }
+  #yui {
+    
+    padding: 20px 30px;
+    margin: 0 10px;
+    color: white;
+    z-index: 1;
+    
+  }
+  #yui :hover{
+    color: white;
+  }
+#pl{
+
+height: 460px;
+width: 1200px;
+  margin-left: 140px;
+  
+font-size: 20px;
+  margin-top: 20px;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 50px;
+  border-bottom: 2px solid purple;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  width: 1120px;
+  position: center;
+  position: relative;
+  left: 210px;
+}
+
+#LIFE{
+  position: fixed;
+  z-index: 100;
+  font-family:cursive;
+  color: white;
+  background-color:rgb(15, 0, 0);
+  font-weight: 500;
+ width: 1490px;
+ height: 50px;
+  bottom: 610px;
+  font-size: 23px;
+  padding-left: 32px;
+padding-top: 20px;
+  padding-bottom: 0px;
+  box-shadow: 10px 2px 10px rgba(128, 128, 128, 0.301);
+  
+}
+#mo{
+  position: relative;
+  bottom: 25px;
+  left: 39px;
+}
+th{
+  border-radius: 30px;
+  border: none;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  background-color: rgb(28, 27, 27);
+  padding-bottom: 5px;
+}
+#hand{
+  position: relative;
+  bottom: 5px;
+}
+#ba{
+  position: relative; 
+  right: 5px;
+  cursor: pointer;
+}
+#r{
+  height: 35px;
+  width: 780px;
+  font-size:18px;
+  padding-left: 15px;
+  background-color: rgb(235,245,254);
+  background: transparent;
+  color: white;
+  border-radius: 30px;
+  
+  border: 1px solid rgba(255, 255, 255, 0);
+} 
+td{
+  border-radius: 30px;
+}
+#s{
+  height: 35px;
+  width: 200px;
+  font-size:20px;
+  padding-left: 15px;
+  background-color: rgb(235,245,254);
+  background: transparent;
+  border-radius: 30px;
+  color: white;
+  border: none;
+}
+#t,#b,#k,#h,#j,#e1,#e2,#e3,#e4,#e5,#e6,#e7,#e8,#ecal{
+  height: 35px;
+  width: 200px;
+  font-size:23px;
+  padding-left: 15px;
+  background-color:#DFF1FD;
+  background: transparent ;
+  backdrop-filter: blur(2px);
+  
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+ 
+}
+@keyframes showRight{
+  100%{
+    width: 0;
+  }
+}
+
+#inc{
+  font-size: 25px;
+  position: relative;
+  bottom: 92px;
+  left: 160px;
+  color: rgb(43, 192, 184);
+}
+
+#exps{
+  font-size: 25px;
+  position: relative;
+  bottom: 122px;
+  left: 637px;
+  color: rgb(43, 192, 184);
+
+  
+}
+#belly{
+  position: relative;
+  bottom: 95px;
+  left: 123px;
+}
+
+#savin{
+  font-size: 25px;
+  position: relative;
+  bottom: 152px;
+  left: 1092px;
+  color: rgb(43, 192, 184);
+}
