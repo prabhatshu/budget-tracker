@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
   *{ padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
 }
 body{
   background: fixed;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
     width:100%;
     height: 100vh;
    
@@ -127,7 +127,7 @@ body{
   position: relative;
   
    font-size: 21px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: "Montserrat", sans-serif;
 
   border: none;
  
@@ -149,7 +149,7 @@ width: 1200px;
  #TEXT::placeholder,#GEXT::placeholder,#FEXT::placeholder{
   color: rgba(0, 0, 0, 0.833);
   font-size: 20px;
-font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 
  }
   #TEXT{
@@ -215,7 +215,7 @@ font-size: 20px;
   margin-top: 20px;
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .heading{
@@ -230,21 +230,23 @@ body{
   left: 210px;
 }
 
-#LIFE {
-   font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(15, 0, 0);
-    font-weight: 500;
-    width: 100%; 
-   
-    padding: 20px 10px;
-    position: fixed;
-    top: 0; 
-    z-index: 100;
-    font-size: 23px;
-    box-shadow: 10px 2px 10px rgba(128, 128, 128, 0.301);
+#LIFE{
+  position: fixed;
+  z-index: 100;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color:rgb(15, 0, 0);
+  font-weight: 500;
+ width: 1490px;
+ height: 50px;
+  bottom: 610px;
+  font-size: 23px;
+  padding-left: 32px;
+padding-top: 20px;
+  padding-bottom: 0px;
+  box-shadow: 10px 2px 10px rgba(128, 128, 128, 0.301);
+  
 }
-
 #mo{
   position: relative;
   bottom: 25px;
