@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart-icon {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.remove-item {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.checkout-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">Online Book Store</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Books</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">Cart (3)</div>
+    </header>
+
+    <main>
+        <section class="cart-items">
+            <!-- Cart items will be dynamically populated here -->
+            <!-- Example item -->
+            <div class="cart-item">
+                <img src="book_cover.jpg" alt="Book Cover">
+                <div class="book-details">
+                    <h2>Book Title</h2>
+                    <p>Author Name</p>
+                    <input type="number" value="1"> <!-- Quantity selector -->
+                    <p>$19.99</p> <!-- Price per item -->
+                    <p class="subtotal">$19.99</p> <!-- Subtotal for each item -->
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="subtotal">Subtotal: $59.97</div>
+            <div class="shipping">Shipping: Free</div>
+            <div class="total">Total: $59.97</div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+        </ul>
+        <div class="social-media">
+            <!-- Social media icons -->
+        </div>
+        <div class="contact-info">
+            <!-- Contact information -->
+        </div>
+    </footer>
+</body>
+</html>
